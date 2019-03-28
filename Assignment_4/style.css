@@ -1,0 +1,106 @@
+#wrapper {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 600px;
+    max-width: auto;
+}
+
+img {
+    display: block;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url(background.jpg);
+}
+
+nav {
+    float:left;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navigation a:hover {
+    color: blue;
+}
+
+#navigation a:visited {
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#navigation {
+    list-style: none;
+}
+
+h2, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation ul {
+    list-style: none;
+    float: left;
+    background-color: black;
+    padding-bottom: 684px;
+    padding-top: 20px;
+    padding-right: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#navigation a {
+    color: purple;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+p {
+    font-size: 100%;
+}
+
+#frontpage {
+    background: lightslategrey; 
+	padding-top: 80px; 
+	padding-left: 30px; 
+	padding-right: 30px; 
+	padding-bottom: 551px; 
+    margin-left: 190px;
+    margin-top: 20px;
+    margin-right: 700px;
+}
+
+#assignments {
+    background: lightslategrey; 
+	padding-top: 10px; 
+	padding-left: 30px; 
+	padding-right: 70px; 
+	padding-bottom: 788px; 
+    margin-left: 190px;
+    margin-top: 20px;    
+    margin-right: 700px;
+}
+
+#courses {
+    background: lightslategrey; 
+	padding-top: 10px; 
+	padding-left: 30px; 
+	padding-right: 200px; 
+	padding-bottom: 20px; 
+    margin-left: 190px;
+    margin-top: 20px;    
+    margin-right: 200px;
+}

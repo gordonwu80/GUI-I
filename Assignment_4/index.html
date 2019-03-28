@@ -1,0 +1,47 @@
+<!--
+File: /~gwu/public_html/index.html
+(91.46) COMP 4610 GUI Programming I
+Assignment 4: Styling Your First Web Page With CSS
+Gordon Wu, UMass Lowell Computer Science, gwu@cs.uml.edu
+Description: Builds on Assignment 2 by styling the previous content using CSS and
+             adding more content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My WebPage</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id=wrapper>
+        <div id=navigation>
+            <ul>
+                <li><a href="index.html">Home</a></li><br><br>
+                <li><a href="assignments.html">Assignments</a></li><br><br>
+                <li><a href="courses.html">Courses</a></li><br><br>
+            </ul>
+        </div>
+        <div id=frontpage>
+            <img src="me_pic.png" width="250" height="300">
+            <h1>Gordon Wu</h1>
+            <h2> About Me: </h2>
+            <p> 
+                My name is Gordon Wu. I am currently a senior Computer Science student at
+                UMass Lowell with a minor in Mathematics. I am interested in Artificial Intelligence and Software
+                Development. <br>My LinkedIn profile is provided down below.
+            </p>
+            <a href="https://www.linkedin.com/in/gordonwu1">LinkedIn</a>
+        </div>
+    </div>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+</body>
+</html>

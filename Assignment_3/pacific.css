@@ -1,0 +1,166 @@
+/* wrapper
+	Lines 12 - 53
+	- Centers the entire module
+	- States the min and max width for the page
+*/
+#wrapper {
+	margin: auto;
+	background-color: #90C7E3;
+	min-width: 600px; 
+	max-width: 770px;
+}
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* body
+	Lines 11 - 54
+	- Sets the background to be the gradient photo (ptrbackground.jpg)
+	- Sets the text in the body to be a Arial, Helvetica, and sans-serif font
+*/
+body {
+	background-image: url(ptrbackground.jpg); 
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header
+	Lines 13 - 15
+	- Sets the header color and text font and text color
+*/
+header {
+	background-color: #000033;
+	color: white;
+	font-family: Georgia;
+}
+
+/* h1 tag (under Header)
+	Line 14
+	- Sets background image to be sunset.jpg
+	- Margin bottom is set to 0px to delete the unncessary space
+	- Adds padding to give the heading more space
+*/
+h1 {
+	margin-bottom: 0px;
+	color: white;
+	padding: 10px;
+	background: url(sunset.jpg) top right no-repeat;
+}
+
+/* div id= content
+	Lines 27 - 47
+	- Sets the background to white
+	- Presets the paddings and margins to help center the text and
+	  to make sure it is on the right of the navigation bar
+*/
+#content { 
+	background: white; 
+	padding-top: 10px; 
+	padding-left: 30px; 
+	padding-right: 30px; 
+	padding-bottom: 30px; 
+	margin-left: 190px;
+	margin-top: 0px;
+}
+
+/* img (under div id= content) 
+	Line 29
+	- Gives some space in between the image and the text with the padding
+	- Makes sure the image is on the left of the text
+*/
+#content img { 
+	float:left; 
+	padding-right: 20px; 
+}
+
+/* div id= contact (under div id= content) 
+	Lines 38 - 46
+	- Resizes the contact to 90% of the regular text size
+*/
+#contact { 
+	font-size: 90%; 
+}
+
+/* nav (under div id= wrapper)
+	Lines 16 - 26
+	- Makes sure the navigation bar is to the left; without this
+	  the navigation bar box stays horizontal and is placed strangely
+*/
+nav {
+	float: left;
+}
+
+/* a (links under nav under ul under li)
+	Lines 18, 20, 22, 24
+	- Bolds the text for the navigation bar items 
+	- Sets the color for the navigation bar items
+*/
+nav a {
+	color: #000033;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* ul (under nav)
+	Lines 17 - 25
+	- Emphasizes the text for the navigation bar items
+	- Removes the bullet points
+*/
+nav ul {
+	font-size: 1.2em;
+	list-style: none;  
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* li (under div id=content)
+	Lines 32 - 36
+	- Sets the bullet points to be marker.gif
+	- Sets the bullet points position to not be touching the image
+*/
+#content li {
+	list-style-image: url(marker.gif);
+	list-style-position: inside;
+}
+
+/* resort (under span under content)
+	Lines 30 and 39
+	- Sets the text for the Resort name to be bold
+	- Changes the color of each iteration of the Resort name
+*/
+.resort {
+	font-weight: bold;
+	color: #00569f;
+}
+
+/* footer (under wrapper)
+	Lines 48 - 52
+	- Sets the font and background color for the footer text
+	- Resizes the footer text
+	- Moves the footer text to be inline with the rest of the items
+*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	background-color: white;
+	font-style: italic;
+	font-size: 75%;
+	margin-left: 190px;
+	padding-left: 30px; 
+	padding-bottom: 30px;
+}
