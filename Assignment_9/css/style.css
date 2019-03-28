@@ -1,0 +1,122 @@
+/*
+    File: https://gordonwu80.github.io/Assignment_9/css/style.css
+    (91.46) COMP 4610 GUI Programming I
+    Assignment 9: Implementing a Bit of Scrabble with Drag-And-Drop
+    Gordon Wu, UMass Lowell Computer Science, gwu@cs.uml.edu
+    Description: Styles the Scrabble game and its components. 
+*/
+
+/*
+    - Changes the background to ../images/background.jpg
+*/
+body {
+    background-color: lightblue;
+    background-image: url(../images/background.jpg);
+}
+
+/*
+    - Styles the header with the Assignment name and the link below it
+*/
+#heading {
+    width: 600px; 
+    margin: 30px auto 10px auto; 
+    padding-bottom: 5px; 
+}
+#scrabble_rules {
+    font-size: 15px;
+}
+
+/*
+    - Styles the Word, Score, Remaining Tiles, and Highest Score
+      line and adds a border below it
+*/
+#header_board { 
+    width: 600px; 
+    margin: 30px auto 10px auto; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid black; 
+    font-size: 14px; 
+}
+#header_board div { 
+    display: inline-block; 
+}
+#header_board > div > div:nth-child(2) { 
+    width: 72px; 
+    font-weight: bold; 
+}
+
+/*
+    - Styles the Dynamically placed board and each of the slots within the board
+*/
+#board { 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+.boardSlot { 
+    border-style: solid; 
+    border-color: black; 
+    float: left; 
+}
+
+/*
+    - Styles the Tile Rack and the tiles within it 
+*/
+#letter_rack { 
+    width: 640px; 
+    height: 182px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    background-image: url("../images/tile_rack.png"); 
+}
+.letter_tile { 
+    border-radius: 4px; 
+    margin: 0px; 
+}
+
+/* 
+    - Adjusts position so the tile sits on the rack and board background image. 
+*/
+.letter_tile_on_rack  { 
+    margin: 27px 5px 0px 5px; 
+}
+.letter_tile_on_board { 
+    top: 3px; 
+}
+.letter_tile_in_dialog { 
+    width: 40px; 
+    height: 44px; 
+    margin: 1px; 
+    float: left; 
+}
+.letter_tile_in_dialog:hover { 
+    cursor: pointer; 
+    box-shadow: 0px 0px 5px blue; }
+
+/*
+    Lines: 56 + 57
+    - Styles the buttons 
+*/
+.buttons { 
+    margin: auto; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+button {
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 29px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+button:disabled {
+    background-color:#f6f6f6;
+    cursor: default;
+}

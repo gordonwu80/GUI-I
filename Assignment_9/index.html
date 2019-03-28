@@ -1,0 +1,61 @@
+<!--
+File: https://gordonwu80.github.io/Assignment_9/index.html
+(91.46) COMP 4610 GUI Programming I
+Assignment 9: Implementing a Bit of Scrabble with Drag-And-Drop
+Gordon Wu, UMass Lowell Computer Science, gwu@cs.uml.edu
+Description: This program is a simple version of the popular board
+             game Scrabble but instead of a full board, it is only one
+             line. This program also checks if the word is in the dictionary
+             or not
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Scrabble</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="js/tiles.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="heading">
+            <h3>Assignment 9: Implementing a Bit of Scrabble with Drag-And-Drop</   >
+            <p id="scrabble_rules"><a href="https://en.wikipedia.org/wiki/Scrabble">Rules for Scrabble</a></p>
+        </div>
+
+        <div id="header_board">
+            <div>
+                <div class="label">Score:</div>
+                <div id="score">0</div>
+            </div>
+            <div>
+                <div class="label">Remaining Tiles:</div>
+                <div id="remaining"></div>
+            </div>
+            <div>
+                <div class="label">Highest Score:</div>
+                <div id="high_score">0</div>
+            </div>
+        </div>
+        
+        <div id="board"></div>
+
+        <div class="buttons">
+            <button id="nextword_button" onclick="next_word()">Next Word</button>
+            <button id="restart_button" onclick="restart()">Restart</button>
+        </div>
+
+        <div id="letter_rack"></div>
+
+    </div> <!-- End of wrapper-->
+</body>
+</html>

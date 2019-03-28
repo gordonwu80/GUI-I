@@ -1,0 +1,115 @@
+/*
+File: https://gordonwu80.github.io/Assignment_6/style.css
+(91.46) COMP 4610 GUI Programming I
+Assignment 6: Creating an Interactive Dynamic Table
+Gordon Wu, UMass Lowell Computer Science, gwu@cs.uml.edu
+Description: Styles the webpage to the users liking. 
+*/
+
+/*
+Lines 18 - 77 in index.html
+    - formats the body 
+    - changes the background color to black
+*/
+body {
+    margin-left: 100px;
+    padding-top: 20px;
+    background-color: black;
+}
+
+/*
+Line  19 in index.thml
+Lines 20 - 28 in index.html
+    - changes the font 
+*/
+h2, #summary {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin-right: 70%;
+}
+
+/*
+Lines 29 - 49 in index.html
+    - changes the font 
+    - formats the form
+*/
+form {
+    font-size: 100%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-right: 40%;
+}
+
+/*
+Line 74 in index.html
+    - changes the button size to be a little smaller than previously
+*/
+button {
+    font-size: 90%;
+}
+
+/*
+Referenced in the JavaScript file: 
+    https://gordonwu80.github.io/Assignment_6/function.js
+    - use to denote errors in the inputs
+*/
+.error {
+    background-color: red;
+    color: white;
+}
+
+/*
+Referenced in the JavaScript file: 
+    https://gordonwu80.github.io/Assignment_6/function.js
+    - adds a border to the table
+*/
+table {
+    width: 100px;
+    margin-left: 50px;
+    color: white;
+    border: 1px solid white;
+}
+
+/*
+Lines 29 - 47 in index.html
+    - adds a border to the example table
+*/
+#example_table {
+    width: 100px;
+    margin-left: 150px;
+    border: 1px solid white;
+}
+
+/*
+Lines 29 - 47 in index.html
+Referenced in the JavaScript file: 
+    https://gordonwu80.github.io/Assignment_6/function.js
+    - adds a border to cells
+    - adds space inside the cells
+*/
+td {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*
+Lines 29 - 47 in index.html
+Referenced in the JavaScript file: 
+    https://gordonwu80.github.io/Assignment_6/function.js
+    - adds a border to cells
+    - adds space inside the cells
+*/
+th {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    padding: 10px;
+}
